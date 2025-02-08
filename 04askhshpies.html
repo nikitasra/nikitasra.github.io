@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Οι Πίτες του Πίτου</title>
+</head>
+<body>
+    <header>
+        <h2><a href="04askhshindex.html">Οι Πίτες του Πίτου</a></h2>
+        <p>pare mou mia pita</p>
+        <nav>
+            <ul>
+                <li><a href="04askhshstore.html"> katasthma</a></li>
+                <li><a href="04askhshpies.html">pites</a></li>
+                <li><a href="04ashsh4contact.html">epikoinwnia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>oi pites</h1>
+        <article>
+            <h2>oi pites mas</h2>
+            <table>
+                <tr>
+                    <td><img src="images/αρχείο λήψης.jpg" alt=""></td><td>spanakopita:</td><td>4&euro;</td>
+                </tr>
+               <tr>
+                <td><img src="images/manitaropita.jpg" alt=""></td><td>manitaropita:</td><td>5.5&euro;</td>
+                </tr>
+               <tr>
+                <td><img src="images/prasopita.jpg" alt=""></td><td>prasopita:</td><td></td>3.5&euro;</td>
+            </tr>
+               <tr>
+               <td><img src="images/mpoureki.jpg" alt=""></td><td>mpoureki:</td><td>4.5&euro;</td>
+            </tr>
+            </table>
+        </article>
+        <article>
+            <h2>Οι πίτες μας στο χώρο σας</h2>
+            <p>
+                Ωράριο λήψης παργγελιών(18:00-20:00)
+            </p>
+            <form action="/sendData" method="post">
+                <fieldset>
+                    <legend>Πληροφορίες Παράδοσης</legend>
+                    <label for="txtonoma">Ονοματεπώνυμο:</label>
+                    <input type="text" name="onoma" id="txtonoma" minlength="3" maxlength="40" required>(*)
+          <br>
+          <label for="txtdromos">διεύθυνση(Οδός-Αριθμός):</label>
+            <input type="text" name="dromos" id="txtdromos" minlength="3" maxlength="40"  required>(*)
+            <br>
+            <label for="slper">Περιοχή:</label>
+            <select name="perioxh" id="slper" required>
+                <option value="Αμπελοκηποι" selected>Αμπελοκηποι</option>
+                <option value="Γαλατσι">Γαλατσι</option>
+                <option value="Μαρουσι">Μαρουσι</option>
+            </select>
+            <label for="txtemail">E-mail:</label>
+            <input type="email" name="email" id="txtemail" size="40">
+            <br>
+            <label for="tel">Τηλέφωνο:</label>
+            <input type="tel" name="tele" id="tel"required>(*)
+            <br>
+            <label for="messa">Ειδικες Πληροφορίες για την παραδοση :</label>
+            <textarea name="mess" id="messa" cols="40" rows="6"></textarea required>(*)
+            <br>
+            (*) Τα πεδία είναι υποχρεωτικά
+                </fieldset>
+                <fieldset>
+                    <legend>Παραγγελια:</legend>
+                    
+                <ul>
+                    <li>
+                        <label for="txtspanakopita">Σπανακοπιτα:</label>
+                        <input type="text" name="orderspanakopita" id="txtspanakopita" min="0" max="100" value="0">
+                    </li>
+                    <li>
+                        <label for="txtmanitaropita">Μανιταροπιτα:</label>
+                        <input type="text" name="ordermaniropita" id="txtmanitaropita" min="0" max="100" value="0">
+                    </li>
+                    <li>
+                        <label for="txtprasopita">Πρασοπιτα:</label>
+                        <input type="text" name="orderprasopita" id="txtprasopita" min="0" max="100" value="0">
+                    </li>
+                    <li>
+                        <label for="txtmpoureki">Μπουρεκι:</label>
+                        <input type="text" name="ordermpoureki" id="txtmpoureki" min="0" max="100" value="0">
+                    </li>
+                </ul>
+                <input type="checkbox" name="offer1" id="chkoffer1" value="offer1-on">
+                <label for="chkoffer1">Ενσωματωση προσφορας στις 10 ή 1 πιτα δωρο</label>
+            </fieldset>
+            <fieldset>
+                <legend>Τροποι Πληρωμης</legend>
+                <label for="slpayment">Τροπος Χρεωσης</label>
+                <select name="payment" id="slpayment">
+                     <option value="visa" selected>Visa</option>
+                    <option value="Cash">Cash</option>
+                    <option value="Pistwsh">pistwsh</option>
+                </select>
+            </fieldset>
+            <br>
+            <input type="submit" value="Send">
+            <input type="submit" value="Reset"
+            </form>
+
+
+
+
+
+
+
+            
+
+
+
+
+
+        </article>
+        
+    </main>
+    
+    <aside>
+        <h2>prosfores</h2>
+        <p>giveaway1</p>
+        <p>stis 10 h 1 dwro</p>
+    </aside>
+    <footer>
+        <p>&copy;Οι Πίτες του Πίτου 2025</p>
+    </footer>
+</body>
+</html>
